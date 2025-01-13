@@ -1,0 +1,59 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Escaneo de QR</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <div class="scanner-container">
+    <img src="assets/qr.png" alt="QR Code" class="qr-image" />
+    <p class="scanning-text">Escaneando...</p>
+  </div>
+</ion-content>
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+<ion-footer class="ion-no-border footer-fixed">
+  <ion-toolbar>
+    <div class="footer-container">
+      <ion-button fill="clear" [routerLink]="['/inicio']" routerLinkActive="active-link">
+        <div class="footer-button">
+          <ion-icon name="home"></ion-icon>
+          <ion-label>Inicio</ion-label>
+        </div>
+      </ion-button>
+
+      <ion-button fill="clear" [routerLink]="['/registro-asistencia']" routerLinkActive="active-link">
+        <div class="footer-button">
+          <ion-icon name="list"></ion-icon>
+          <ion-label>Asistencias</ion-label>
+        </div>
+      </ion-button>
+
+      <ion-button fill="clear" [routerLink]="['/scan-qr']" routerLinkActive="active-link">
+        <div class="footer-button">
+          <ion-icon name="camera"></ion-icon>
+          <ion-label>Escanear</ion-label>
+        </div>
+      </ion-button>
+
+      <ion-button fill="clear" [routerLink]="['/perfil']" routerLinkActive="active-link">
+        <div class="footer-button">
+          <ion-icon name="person"></ion-icon>
+          <ion-label>Perfil</ion-label>
+        </div>
+      </ion-button>
+    </div>
+  </ion-toolbar>
+</ion-footer>

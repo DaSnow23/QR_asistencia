@@ -1,0 +1,79 @@
+
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/registro-asistencia"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Detalle Asistencias</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <div class="course-header">
+    <h2>Aplicaciones Móviles</h2>
+    <p>Registro detallado de asistencias</p>
+  </div>
+
+  <ion-list>
+    <ion-item>
+      <ion-label>
+        <h2>Clase 1</h2>
+        <p>Fecha: 10 de Enero, 2024</p>
+        <p>Hora: 08:30 - 10:00</p>
+      </ion-label>
+      <ion-badge slot="end" color="success">Asistió</ion-badge>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>
+        <h2>Clase 2</h2>
+        <p>Fecha: 17 de Enero, 2024</p>
+        <p>Hora: 08:30 - 10:00</p>
+      </ion-label>
+      <ion-badge slot="end" color="success">Asistió</ion-badge>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>
+        <h2>Clase 3</h2>
+        <p>Fecha: 24 de Enero, 2024</p>
+        <p>Hora: 08:30 - 10:00</p>
+      </ion-label>
+      <ion-badge slot="end" color="danger">No Asistió</ion-badge>
+    </ion-item>
+  </ion-list>
+</ion-content>
+
+<ion-footer class="ion-no-border footer-fixed">
+  <ion-toolbar>
+    <div class="footer-container">
+      <ion-button fill="clear" [routerLink]="['/inicio']" routerLinkActive="active-link">
+        <div class="footer-button">
+          <ion-icon name="home"></ion-icon>
+          <ion-label>Inicio</ion-label>
+        </div>
+      </ion-button>
+
+      <ion-button fill="clear" [routerLink]="['/registro-asistencia']" routerLinkActive="active-link">
+        <div class="footer-button">
+          <ion-icon name="list"></ion-icon>
+          <ion-label>Asistencias</ion-label>
+        </div>
+      </ion-button>
+
+      <ion-button fill="clear" [routerLink]="['/lector-qr']" routerLinkActive="active-link">
+        <div class="footer-button">
+          <ion-icon name="camera"></ion-icon>
+          <ion-label>Escanear</ion-label>
+        </div>
+      </ion-button>
+
+      <ion-button fill="clear" [routerLink]="['/perfil']" routerLinkActive="active-link">
+        <div class="footer-button">
+          <ion-icon name="person"></ion-icon>
+          <ion-label>Perfil</ion-label>
+        </div>
+      </ion-button>
+    </div>
+  </ion-toolbar>
+</ion-footer>

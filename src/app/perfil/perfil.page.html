@@ -1,0 +1,111 @@
+<!-- perfil.page.html -->
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Mi Perfil</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <div class="profile-container">
+    <div class="profile-header">
+      <div class="avatar-container">
+        <ion-avatar>
+          <img src="assets/avatar.png" alt="foto de perfil">
+        </ion-avatar>
+      </div>
+      <h2>Juan Pérez</h2>
+      <p>Ingeniería en Sistemas</p>
+    </div>
+
+    <ion-list>
+      <ion-item>
+        <ion-icon name="person" slot="start" color="primary"></ion-icon>
+        <ion-label>
+          <p>Nombre</p>
+          <h2>Juan Pérez</h2>
+        </ion-label>
+      </ion-item>
+
+      <ion-item>
+        <ion-icon name="calendar" slot="start" color="primary"></ion-icon>
+        <ion-label>
+          <p>Fecha de Nacimiento</p>
+          <h2>15/03/2000</h2>
+        </ion-label>
+      </ion-item>
+
+      <ion-item>
+        <ion-icon name="mail" slot="start" color="primary"></ion-icon>
+        <ion-label>
+          <p>Correo</p>
+          <h1>juan.perez&#64;duocuc.cl</h1>
+        </ion-label>
+      </ion-item>
+
+      <ion-item>
+        <ion-icon name="call" slot="start" color="primary"></ion-icon>
+        <ion-label>
+          <p>Teléfono</p>
+          <h2>+56 9 1234 5678</h2>
+        </ion-label>
+      </ion-item>
+
+      <ion-item>
+        <ion-icon name="school" slot="start" color="primary"></ion-icon>
+        <ion-label>
+          <p>Carrera</p>
+          <h2>Ingeniería en Sistemas</h2>
+        </ion-label>
+      </ion-item>
+    </ion-list>
+
+    <div class="button-container">
+      <ion-button expand="block" color="primary">
+        <ion-icon name="create" slot="start"></ion-icon>
+        Editar Perfil
+      </ion-button>
+
+      <ion-button expand="block" color="danger"routerLink="/login" class="form-element">
+        <ion-icon name="log-out" slot="start"></ion-icon>
+        Cerrar Sesión
+      </ion-button>
+    </div>
+  </div>
+</ion-content>
+
+<ion-footer class="ion-no-border footer-fixed" color="primary">
+  <ion-toolbar>
+    <div class="footer-container">
+      <ion-button fill="clear" [routerLink]="['/inicio']" routerLinkActive="active-link">
+        <div class="footer-button">
+          <ion-icon name="home"></ion-icon>
+          <ion-label>Inicio</ion-label>
+        </div>
+      </ion-button>
+
+      <ion-button fill="clear" [routerLink]="['/registro-asistencia']" routerLinkActive="active-link">
+        <div class="footer-button">
+          <ion-icon name="list"></ion-icon>
+          <ion-label>Asistencias</ion-label>
+        </div>
+      </ion-button>
+
+      <ion-button fill="clear" [routerLink]="['/lector-qr']" routerLinkActive="active-link">
+        <div class="footer-button">
+          <ion-icon name="camera"></ion-icon>
+          <ion-label>Escanear</ion-label>
+        </div>
+      </ion-button>
+
+      <ion-button fill="clear" [routerLink]="['/perfil']" routerLinkActive="active-link">
+        <div class="footer-button">
+          <ion-icon name="person"></ion-icon>
+          <ion-label>Perfil</ion-label>
+        </div>
+      </ion-button>
+    </div>
+  </ion-toolbar>
+</ion-footer>
