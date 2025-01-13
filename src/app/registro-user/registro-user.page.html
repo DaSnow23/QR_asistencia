@@ -1,0 +1,62 @@
+
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Registro</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <form #formulario="ngForm">
+    <ion-item>
+      <ion-label position="floating">Nombre</ion-label>
+      <ion-input type="text" [(ngModel)]="nombre" name="nombre" required></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="floating">Fecha de Nacimiento</ion-label>
+      <ion-input type="date" [(ngModel)]="fechaNacimiento" name="fechaNacimiento" required></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="floating">Correo</ion-label>
+      <ion-input type="email" [(ngModel)]="correo" name="correo" required></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="floating">Contraseña</ion-label>
+      <ion-input type="password" [(ngModel)]="password" name="password" required></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="floating">Confirmar Contraseña</ion-label>
+      <ion-input type="password" [(ngModel)]="confirmPassword" name="confirmPassword" required></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="floating">Número de Teléfono</ion-label>
+      <ion-input type="tel" [(ngModel)]="telefono" name="telefono" required></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="floating">Carrera</ion-label>
+      <ion-select [(ngModel)]="carrera" name="carrera" required>
+        <ion-select-option value="informatica">Informática</ion-select-option>
+        <ion-select-option value="sistemas">Sistemas</ion-select-option>
+        <ion-select-option value="industrial">Industrial</ion-select-option>
+        <ion-select-option value="mecanica">Mecánica</ion-select-option>
+        <ion-select-option value="electronica">Electrónica</ion-select-option>
+      </ion-select>
+    </ion-item>
+
+    <div class="ion-padding">
+    <ion-button expand="block" color="dark" routerLink="/inicio" class="form-element"(click)="presentAlert()">
+      Registrarse
+    </ion-button>
+   
+    <ion-button expand="block" color="medium" routerLink="/login" class="form-element">
+    login
+    </ion-button>
+      
+    </div>
+  </form>
+</ion-content>

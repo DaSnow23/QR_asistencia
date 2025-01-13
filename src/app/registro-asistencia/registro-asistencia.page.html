@@ -1,0 +1,122 @@
+
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Mis Asistencias</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <ion-card>
+    <ion-card-header>
+      <ion-card-subtitle>Materia</ion-card-subtitle>
+      <ion-card-title>Aplicaciones Móviles</ion-card-title>
+    </ion-card-header>
+
+    <ion-card-content>
+      <div class="attendance-info">
+        <div class="attendance-stats">
+          <div class="stat">
+            <h3>2</h3>
+            <p>Clases Asistidas</p>
+          </div>
+          <div class="stat">
+            <h3>3</h3>
+            <p>Total Clases</p>
+          </div>
+          <div class="stat">
+            <h3>67%</h3>
+            <p>Asistencia</p>
+          </div>
+        </div>
+        <ion-button expand="block" [routerLink]="['/detalle-asistencia']">
+          Ver Detalle
+        </ion-button>
+      </div>
+    </ion-card-content>
+  </ion-card>
+</ion-content>
+
+<ion-footer class="ion-no-border footer-fixed">
+  <ion-toolbar>
+    <div class="footer-container">
+      <ion-button fill="clear" [routerLink]="['/home']" routerLinkActive="active-link">
+        <div class="footer-button">
+          <ion-icon name="home"></ion-icon>
+          <ion-label>Inicio</ion-label>
+        </div>
+      </ion-button>
+
+      <ion-button fill="clear" [routerLink]="['/registro-asistencia']" routerLinkActive="active-link">
+        <div class="footer-button">
+          <ion-icon name="list"></ion-icon>
+          <ion-label>Asistencias</ion-label>
+        </div>
+      </ion-button>
+
+      <ion-button fill="clear" [routerLink]="['/scan-qr']" routerLinkActive="active-link">
+        <div class="footer-button">
+          <ion-icon name="camera"></ion-icon>
+          <ion-label>Escanear</ion-label>
+        </div>
+      </ion-button>
+
+      <ion-button fill="clear" [routerLink]="['/perfil']" routerLinkActive="active-link">
+        <div class="footer-button">
+          <ion-icon name="person"></ion-icon>
+          <ion-label>Perfil</ion-label>
+        </div>
+      </ion-button>
+    </div>
+  </ion-toolbar>
+</ion-footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- divisioooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooonnnnnnnnnnnnnnnnnnn-->
+<ion-footer class="ion-no-border footer-fixed" color="primary"></ion-footer>
+  <ion-toolbar>
+    <div class="footer-container">
+      <ion-button fill="clear" [routerLink]="['/inicio']" routerLinkActive="active-link">
+        <div class="footer-button">
+          <ion-icon name="home"></ion-icon>
+          <ion-label>Inicio</ion-label>
+        </div>
+      </ion-button>
+
+      <ion-button fill="clear" [routerLink]="['/registro-asistencia']" routerLinkActive="active-link">
+        <div class="footer-button">
+          <ion-icon name="list"></ion-icon>
+          <ion-label>Asistencias</ion-label>
+        </div>
+      </ion-button>
+
+      <ion-button fill="clear" [routerLink]="['/lector-qr']" routerLinkActive="active-link">
+        <div class="footer-button">
+          <ion-icon name="camera"></ion-icon>
+          <ion-label>Escanear</ion-label>
+        </div>
+      </ion-button>
+
+      <ion-button fill="clear" [routerLink]="['/perfil']" routerLinkActive="active-link">
+        <div class="footer-button">
+          <ion-icon name="person"></ion-icon>
+          <ion-label>Perfil</ion-label>
+        </div>
+      </ion-button>
+    </div>
+  </ion-toolbar>

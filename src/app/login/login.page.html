@@ -1,0 +1,43 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title id="title">QR Check-In</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <ion-card class="login-card">
+    <ion-card-header class="form-element">
+      <ion-card-title id="title">Inicia Sesión</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <!--  Correo -->
+      <ion-item class="form-element">
+        
+        <ion-input type="email" placeholder="Ingrese su correo"></ion-input>
+      </ion-item>
+
+      <!--  Contraseña -->
+      <ion-item class="form-element">
+       
+        <ion-input type="password" placeholder="Ingrese su contraseña"></ion-input>
+      </ion-item>
+
+      <!--  Login -->
+      <ion-button expand="block" color="dark" routerLink="/inicio" class="form-element">
+        Login
+      </ion-button>
+
+      <!-- BRegistrarse -->
+      <ion-button expand="block" fill="outline" color="medium" routerLink="/registro-user" class="form-element">
+        Registrarse
+      </ion-button>
+
+      <!--  Recuperar Contraseña -->
+      <ion-text color="medium">
+        <p class="form-element" routerLink="/recuperar-contrasena" style="text-align: center; margin-top: 10px;">
+          ¿Olvidaste tu contraseña?
+        </p>
+      </ion-text>
+    </ion-card-content>
+  </ion-card>
+</ion-content>

@@ -1,0 +1,95 @@
+<!-- home.page.html -->
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    
+    <ion-title>QR CHECK-IN</ion-title>
+    <ion-buttons fill="clear" [routerLink]="['/login']" routerLinkActive="active-link"slot="end">
+      <ion-icon name="exit"></ion-icon>
+      <ion-button> salir </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+  
+</ion-header>
+
+<ion-content class="ion-padding">
+  <div class="welcome-container">
+    <h1 class="ion-text-center">Bienvenido a QR CHECK-IN</h1>
+    
+    <ion-card>
+      <ion-card-header>
+        <ion-card-title>¿Cómo funciona?</ion-card-title>
+      </ion-card-header>
+      
+      <ion-card-content>
+        <ion-list>
+          <ion-item lines="none">
+            <ion-icon name="camera" slot="start" color="primary"></ion-icon>
+            <ion-label>1.Seleciona la opcion que se encuentra abajo con el simbolo de la camara que dice scaner  </ion-label>
+          </ion-item>
+          
+          <ion-item lines="none">
+            <ion-icon name="qr-code" slot="start" color="primary"></ion-icon>
+            <ion-label>2. Escanea el código QR de tu clase</ion-label>
+          </ion-item>
+          
+          <ion-item lines="none">
+            <ion-icon name="checkmark-circle" slot="start" color="primary"></ion-icon>
+            <ion-label>3. ¡Listo! Tu asistencia quedará registrada</ion-label>
+          </ion-item>
+          
+          <ion-item lines="none">
+            <ion-icon name="list" slot="start" color="primary"></ion-icon>
+            <ion-label>4. Revisa tu historial de asistencias cuando quieras</ion-label>
+          </ion-item>
+          
+          <ion-button id="context-menu-trigger">¿Tienes un problema?</ion-button>
+          <ion-popover trigger="context-menu-trigger" triggerAction="context-menu">
+            <ng-template>
+              <ion-content class="ion-padding">Si necesitas ayuda mandanos un correo a este gmail QR_Check_asistencia&#64;gmail.com</ion-content>
+            </ng-template>
+          </ion-popover>
+
+        </ion-list>
+      </ion-card-content>
+    </ion-card>
+  </div>
+</ion-content>
+
+
+
+<ion-footer class="ion-no-border footer-fixed" color="primary">
+  <ion-toolbar>
+    <div class="footer-container">
+      <ion-button fill="clear" [routerLink]="['/inicio']" routerLinkActive="active-link">
+        <div class="footer-button">
+          <ion-icon name="home"></ion-icon>
+          <ion-label>Inicio</ion-label>
+        </div>
+      </ion-button>
+
+      <ion-button fill="clear" [routerLink]="['/registro-asistencia']" routerLinkActive="active-link">
+        <div class="footer-button">
+          <ion-icon name="list"></ion-icon>
+          <ion-label>Asistencias</ion-label>
+        </div>
+      </ion-button>
+
+      <ion-button fill="clear" [routerLink]="['/lector-qr']" routerLinkActive="active-link">
+        <div class="footer-button">
+          <ion-icon name="camera"></ion-icon>
+          <ion-label>Escanear</ion-label>
+        </div>
+      </ion-button>
+
+      <ion-button fill="clear" [routerLink]="['/perfil']" routerLinkActive="active-link">
+        <div class="footer-button">
+          <ion-icon name="person"></ion-icon>
+          <ion-label>Perfil</ion-label>
+        </div>
+      </ion-button>
+    </div>
+  </ion-toolbar>
+</ion-footer>
